@@ -4,12 +4,12 @@
     <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-	<Version>1.0.2</Version>
+	<Version>1.0.3</Version>
 	<PackageLicenseFile>LICENSE</PackageLicenseFile>
 	<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-	<RepositoryUrl>https://github.com/themmixproject/Blazor.Cookies</RepositoryUrl>
+	<RepositoryUrl>https://github.com/themmixproject/MMIX.Blazor.Cookies</RepositoryUrl>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
-	<PackageProjectUrl>https://github.com/themmixproject/Blazor.Cookies</PackageProjectUrl>
+	<PackageProjectUrl>https://github.com/themmixproject/MMIX.Blazor.Cookies</PackageProjectUrl>
 	<Title>MMIX.Blazor.Cookies</Title>
 	<PackageReleaseNotes>- Renamed JsInteropCookieService to JSInteropCookieService
 - Minor bug fix in JSInteropCookieService</PackageReleaseNotes>
