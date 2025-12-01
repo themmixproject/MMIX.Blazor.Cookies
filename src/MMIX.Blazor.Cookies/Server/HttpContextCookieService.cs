@@ -141,12 +141,11 @@ public class HttpContextCookieService : ICookieService
                 $"{name}=",
                 StringComparison.Ordinal
             );
-            if (isMatchedCookie)
-            {
-                responseCookies.RemoveAt(i);
-                responseHeaders[HeaderNames.SetCookie] = responseCookies.ToArray();
-                break;
-            }
+            if (!isMatchedCookie) { continue; }
+
+            responseCookies.RemoveAt(i);
+            responseHeaders[HeaderNames.SetCookie] = responseCookies.ToArray();
+            break;
         }
     }
 
