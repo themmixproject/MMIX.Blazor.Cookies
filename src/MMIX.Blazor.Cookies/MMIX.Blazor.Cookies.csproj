@@ -4,20 +4,20 @@
     <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-	<Version>1.0.3</Version>
-	<PackageLicenseFile>LICENSE</PackageLicenseFile>
-	<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-	<RepositoryUrl>https://github.com/themmixproject/MMIX.Blazor.Cookies</RepositoryUrl>
-	<PackageReadmeFile>README.md</PackageReadmeFile>
-	<PackageProjectUrl>https://github.com/themmixproject/MMIX.Blazor.Cookies</PackageProjectUrl>
-	<Title>MMIX.Blazor.Cookies</Title>
-	<PackageReleaseNotes>- Renamed JsInteropCookieService to JSInteropCookieService
+  <Version>1.0.3</Version>
+  <PackageLicenseFile>LICENSE</PackageLicenseFile>
+  <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+  <RepositoryUrl>https://github.com/themmixproject/MMIX.Blazor.Cookies</RepositoryUrl>
+  <PackageReadmeFile>README.md</PackageReadmeFile>
+  <PackageProjectUrl>https://github.com/themmixproject/MMIX.Blazor.Cookies</PackageProjectUrl>
+  <Title>MMIX.Blazor.Cookies</Title>
+  <PackageReleaseNotes>- Renamed JsInteropCookieService to JSInteropCookieService
 - Minor bug fix in JSInteropCookieService</PackageReleaseNotes>
-	<Authors>themmixproject</Authors>
-	<Description>A package that makes working with cookies in Blazor easier</Description>
-	<RepositoryType>git</RepositoryType>
-	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	<PackageTags>csharp; dotnet; cookie; cookies; blazor; blazor-server; blazor-webassembly; jsruntime; browser-cookies; js-interop;</PackageTags>
+  <Authors>themmixproject</Authors>
+  <Description>A package that makes working with cookies in Blazor easier</Description>
+  <RepositoryType>git</RepositoryType>
+  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+  <PackageTags>csharp; dotnet; cookie; cookies; blazor; blazor-server; blazor-webassembly; jsruntime; browser-cookies; js-interop;</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
@@ -36,14 +36,14 @@
     <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="3.1.32" />
   </ItemGroup>
 
-	<ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
-		<PackageReference Include="Microsoft.JSInterop" Version="8.*" />
-	</ItemGroup>
-	<ItemGroup Condition="'$(TargetFramework)' == 'net9.0'">
-		<PackageReference Include="Microsoft.JSInterop" Version="9.*" />
-	</ItemGroup>
-	<ItemGroup>
-	  <ProjectReference Include="..\..\patches\MMIX.Blazor.Cookies.Patches\MMIX.Blazor.Cookies.Patches.csproj" />
-	</ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
+    <PackageReference Include="Microsoft.JSInterop" Version="8.*" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net9.0'">
+    <PackageReference Include="Microsoft.JSInterop" Version="9.*" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Patches\" />
+  </ItemGroup>
   
 </Project>

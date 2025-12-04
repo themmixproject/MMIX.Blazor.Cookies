@@ -3,7 +3,7 @@ using System.Text.RegularExpressions;
 
 namespace MMIX.Blazor.Cookies.Patches.JSInterop;
 
-public class VirtualJSRuntime : IJSRuntime
+internal class VirtualJSRuntime : IJSRuntime
 {
     private readonly Jint.Engine _engine;
     public VirtualJSRuntime()
