@@ -4,15 +4,14 @@
     <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-  <Version>1.0.3</Version>
+  <Version>1.0.4</Version>
   <PackageLicenseFile>LICENSE</PackageLicenseFile>
   <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   <RepositoryUrl>https://github.com/themmixproject/MMIX.Blazor.Cookies</RepositoryUrl>
   <PackageReadmeFile>README.md</PackageReadmeFile>
   <PackageProjectUrl>https://github.com/themmixproject/MMIX.Blazor.Cookies</PackageProjectUrl>
   <Title>MMIX.Blazor.Cookies</Title>
-  <PackageReleaseNotes>- Renamed JsInteropCookieService to JSInteropCookieService
-- Minor bug fix in JSInteropCookieService</PackageReleaseNotes>
+  <PackageReleaseNotes>- Fixed major bug that will fail install because it looks for non-existant MMIX.Blazor.Cookies.Patches package</PackageReleaseNotes>
   <Authors>themmixproject</Authors>
   <Description>A package that makes working with cookies in Blazor easier</Description>
   <RepositoryType>git</RepositoryType>
